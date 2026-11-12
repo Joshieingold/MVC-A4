@@ -22,6 +22,22 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
+[/home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/Views/Course/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cnNlL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/Views/Course/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cnNlL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/Views/Course/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cnNlL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/Views/Course/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cnNlL1Nob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
