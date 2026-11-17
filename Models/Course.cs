@@ -17,7 +17,7 @@ public class Course
     [Required]
     public string? Instructor { get; set; }
 
-    [Range(0, 3)]
+    [Range(0, 6)]
     public int? Credits { get; set; }
     public bool? Online { get; set; }
 

@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "BtXlKtXb1lg=",
+  "dgSpecHash": "J8JYWtPhtOU=",
   "success": true,
   "projectFilePath": "/home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/A4_EF_CRUD_Validation.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/josh/.nuget/packages/microsoft.data.sqlite.core/10.0.15/microsoft.data.sqlite.core.10.0.15.nupkg.sha512",
+    "/home/josh/.nuget/packages/microsoft.entityframeworkcore/10.0.15/microsoft.entityframeworkcore.10.0.15.nupkg.sha512",
+    "/home/josh/.nuget/packages/microsoft.entityframeworkcore.abstractions/10.0.15/microsoft.entityframeworkcore.abstractions.10.0.15.nupkg.sha512",
+    "/home/josh/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.15/microsoft.entityframeworkcore.analyzers.10.0.15.nupkg.sha512",
+    "/home/josh/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.15/microsoft.entityframeworkcore.relational.10.0.15.nupkg.sha512",
+    "/home/josh/.nuget/packages/microsoft.entityframeworkcore.sqlite/10.0.15/microsoft.entityframeworkcore.sqlite.10.0.15.nupkg.sha512",
+    "/home/josh/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/10.0.15/microsoft.entityframeworkcore.sqlite.core.10.0.15.nupkg.sha512",
+    "/home/josh/.nuget/packages/microsoft.extensions.dependencymodel/10.0.15/microsoft.extensions.dependencymodel.10.0.15.nupkg.sha512",
+    "/home/josh/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.13/sqlitepclraw.bundle_e_sqlite3.2.1.13.nupkg.sha512",
+    "/home/josh/.nuget/packages/sqlitepclraw.core/2.1.13/sqlitepclraw.core.2.1.13.nupkg.sha512",
+    "/home/josh/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.13/sqlitepclraw.lib.e_sqlite3.2.1.13.nupkg.sha512",
+    "/home/josh/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.13/sqlitepclraw.provider.e_sqlite3.2.1.13.nupkg.sha512"
+  ],
   "logs": []
 }
