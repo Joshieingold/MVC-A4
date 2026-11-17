@@ -10,11 +10,11 @@ public class Course
 
     public int Id { get; set; }
 
-    [Required]
-    [StringLength(50)]
+    [Required(ErrorMessage = "Please Enter Course Title")]
+    [StringLength(50, ErrorMessage = "Course Title cannot exceed 50 characters.")]
     public string? Title { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "Please Enter the Name of the Instructor for the Course")]
     public string? Instructor { get; set; }
 
     [Range(0, 6)]
@@ -24,5 +24,5 @@ public class Course
     /////////////////
     // Constructor //
     /////////////////
-    Course() { }
+    public Course() { }
 }

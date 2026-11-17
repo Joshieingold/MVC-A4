@@ -1,3 +1,4 @@
+using A4_EF_CRUD_Validation.Models;
 using DbDemo.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +15,7 @@ public class CourseController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        return RedirectToAction("Show", "Course");
     }
 
     public IActionResult Show()
@@ -26,19 +27,27 @@ public class CourseController : Controller
     [HttpGet]
     public IActionResult Create()
     {
-        return View();
+        Course c = new();
+        return View(c);
     }
 
     [HttpPost, ActionName("Create")]
-    public IActionResult CreatePost()
+    public IActionResult CreatePost(Course c)
     {
-        return View();
+        if (!ModelState.IsValid)
+        {
+            return View(c);
+        }
+        _service.Add(c);
+        _service.SaveChanges();
+        return RedirectToAction(nameof(Index));
     }
 
     [HttpGet]
-    public IActionResult Edit()
+    public IActionResult Edit(int id)
     {
-        return View();
+        Course c = _service.Course.FirstOrDefault(c => c.Id == id);
+        return View(c);
     }
 
     [HttpPost, ActionName("Edit")]
