@@ -19,7 +19,7 @@
             <h4>Credits: @Model.Credits</h4>
         </div>
         <div class="card bg-light bg-gradient shadow p-3">
-            <h4>Available Online: @Model.Online</h4>
+            <h4>Available Online: @(Model.Online == true ? "Yes" : "No")</h4>
         </div>
     </div>
 </form>

@@ -26,7 +26,6 @@
         </div>
         <div class="card bg-light bg-gradient shadow p-3">
             <label>Is This Course Offered Online? *</label>
-            <span class="text-danger" asp-validation-for="Online"></span>
             <div class="rad-box">
                 <input asp-for="Online" id="online-yes" type="radio" value="true" />
                 <label for="online-yes">Yes</label>
@@ -35,7 +34,9 @@
                 <input asp-for="Online" id="online-no" type="radio" value="false" />
                 <label for="online-no">No</label>
             </div>
+            <span class="text-danger" asp-validation-for="Online"></span>
         </div>
     </div>
 </form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }
 

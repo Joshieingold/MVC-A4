@@ -18,7 +18,7 @@
             <td>@item.Title</td>
             <td>@item.Instructor</td>
             <td class="text-center">@item.Credits</td>
-            <td class="text-center">@item.Online</td>
+            <td class="text-center">@(item.Online == true ? "Yes" : "No")</td>
             <td class="d-flex gap-1">
                 <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary bi bi-pencil"> Edit</a>
                 <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger bi bi-trash"> Delete</a>
