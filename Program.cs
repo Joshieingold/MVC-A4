@@ -1,4 +1,4 @@
-using DbDemo.Models;
+using A4_EF_CRUD_Validation.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

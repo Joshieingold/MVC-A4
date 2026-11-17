@@ -13,7 +13,7 @@ INSERT INTO Course (Title, Instructor, Credits, Online) VALUES
     ('PC and Office Fundamentals',                            'Marc Leblanc',     1, 0),
     ('CCNA: Introduction to Networks',                        'Priya Nair',       0, 1),
     ('CCNA: Switching, Routing, and Wireless Essentials',     'Priya Nair',       0, 1),
-    ('CCNA: Enterprise Networking, Security, and Automation', 'Priya Nair',       0, 1),
+    ('CCNA: Enterprise Networking, Security, Automation',     'Priya Nair',       0, 1),
     ('Academic Writing and Research',                         'Jordan MacDonald', 3, 1),
     ('Applied Writing',                                       'Jordan MacDonald', 3, 1),
     ('Business Communications',                               'Claire Gallant',   3, 1),

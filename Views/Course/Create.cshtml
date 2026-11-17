@@ -4,29 +4,29 @@
     <div class="d-flex flex-row justify-content-between align-items-center">
         <h2>Create a new Course</h2>
         <div class="actions-wrapper">
-            <button class="btn btn-primary bi bi-save" asp-action="Create"> Save</button>
-            <a class="btn btn-danger bi bi-x-lg" asp-action="Show"> Cancel</a>
+            <button class="btn btn-primary bi bi-save shadow-sm" asp-action="Create"> Save</button>
+            <a class="btn btn-danger bi bi-x-lg shadow-sm" asp-action="Show"> Cancel</a>
         </div>
     </div>
     <div class="card-container d-flex flex-column gap-5">
-        <div class="card p-3">
-            <span class="text-danger" asp-validation-for="Title"></span>
+        <div class="card bg-light bg-gradient shadow p-3">
             <label for="course-title">Course Title *</label>
             <input asp-for="Title" id="course-title" />
+            <span class="text-danger" asp-validation-for="Title"></span>
         </div>
-        <div class="card p-3">
-            <span class="text-danger" asp-validation-for="Instructor"></span>
+        <div class="card bg-light bg-gradient shadow p-3">
             <label for="instructor-input">Instructor *</label>
             <input asp-for="Instructor" id="instructor-input" />
+            <span class="text-danger" asp-validation-for="Instructor"></span>
         </div>
-        <div class="card p-3">
-            <span class="text-danger" asp-validation-for="Credits"></span>
-            <label for="credit-input">Credits</label>
+        <div class="card bg-light bg-gradient shadow p-3">
+            <label for="credit-input">Credits *</label>
             <input asp-for="Credits" id="credit-input" type="number" />
+            <span class="text-danger" asp-validation-for="Credits"></span>
         </div>
-        <div class="card p-3">
+        <div class="card bg-light bg-gradient shadow p-3">
+            <label>Is This Course Offered Online? *</label>
             <span class="text-danger" asp-validation-for="Online"></span>
-            <label>Is This Course Offered Online?</label>
             <div class="rad-box">
                 <input asp-for="Online" id="online-yes" type="radio" value="true" />
                 <label for="online-yes">Yes</label>

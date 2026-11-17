@@ -128,3 +128,4 @@
 /home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/obj/Debug/net10.0/A4_EF_CRUD_Validation.pdb
 /home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/obj/Debug/net10.0/A4_EF_CRUD_Validation.genruntimeconfig.cache
 /home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/obj/Debug/net10.0/ref/A4_EF_CRUD_Validation.dll
+/home/josh/Documents/NBCC/MVC-Framework/Assignments/A4_EF_CRUD_Validation/obj/Debug/net10.0/A4_EF_CRUD_Validation.sourcelink.json

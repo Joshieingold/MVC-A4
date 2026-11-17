@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("A4_EF_CRUD_Validation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+297215eb4895dd25fa6ecacafefaded9843a45a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f5a626eccace1d54fcc913d03ce308bb06540c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("A4_EF_CRUD_Validation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("A4_EF_CRUD_Validation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

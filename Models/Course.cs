@@ -17,8 +17,11 @@ public class Course
     [Required(ErrorMessage = "Please Enter the Name of the Instructor for the Course")]
     public string? Instructor { get; set; }
 
-    [Range(0, 6)]
+    [Required(ErrorMessage = "Please enter the number of credits")]
+    [Range(0, 6, ErrorMessage = "Credits must be between 0 and 6.")]
     public int? Credits { get; set; }
+
+    [Required(ErrorMessage = "Please Choose Yes or No")]
     public bool? Online { get; set; }
 
     /////////////////

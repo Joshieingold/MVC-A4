@@ -1,12 +1,11 @@
 using A4_EF_CRUD_Validation.Models;
-using DbDemo.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace A4_EF_CRUD_Validation.Controllers;
 
 public class CourseController : Controller
 {
-    public readonly CourseDbContext _service;
+    private readonly CourseDbContext _service;
 
     public CourseController(CourseDbContext cdc)
     {
@@ -92,10 +91,6 @@ public class CourseController : Controller
     [HttpPost, ActionName("Delete")]
     public IActionResult DeletePost(int id)
     {
-        if (!ModelState.IsValid)
-        {
-            return View(id);
-        }
         Course? foundCourse = _service.Course.Find(id);
         if (foundCourse == null)
         {

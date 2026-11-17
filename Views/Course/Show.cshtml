@@ -1,7 +1,7 @@
 @model List<A4_EF_CRUD_Validation.Models.Course>
 <div class="d-flex flex-row justify-content-between align-items-center">
     <h2>All Courses</h2>
-    <a action="submit" asp-action="Create" class="btn btn-primary bi bi-plus-circle"> New</a>
+    <a asp-action="Create" class="btn btn-primary bi bi-plus-circle"> New</a>
 </div>
 
 <table class="table">
@@ -12,18 +12,16 @@
         <th>Online</th>
         <th>Actions</th>
     </tr>
-    @foreach (Course item in @Model)
+    @foreach (Course item in Model)
     {
         <tr>
-            <td >@item.Title</td>
-            <td >@item.Instructor</td>
+            <td>@item.Title</td>
+            <td>@item.Instructor</td>
             <td class="text-center">@item.Credits</td>
             <td class="text-center">@item.Online</td>
             <td class="d-flex gap-1">
-                <form>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary bi bi-pencil"></a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger bi bi-trash"></a>
-                </form>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary bi bi-pencil"> Edit</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger bi bi-trash"> Delete</a>
             </td>
         </tr>
     }
