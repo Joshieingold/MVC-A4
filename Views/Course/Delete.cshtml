@@ -1,1 +1,26 @@
 @model A4_EF_CRUD_Validation.Models.Course
+
+<form method="post" class="d-flex flex-column gap-3">
+    <div class="card p-3 bg-danger bg-gradient text-white d-flex flex-row justify-content-between align-items-center">
+        <h2>Are you sure you want to Delete this Course?</h2>
+        <div class="actions-wrapper">
+            <button class="btn btn-danger bi bi-trash shadow-sm" asp-action="Delete"> Delete</button>
+            <a class="btn btn-primary bi bi-x-lg shadow-sm" asp-action="Show"> Cancel</a>
+        </div>
+    </div>
+    <div class="card-container d-flex flex-column gap-5">
+        <div class="card p-3">
+            <h4>Course Title: @Model.Title</h4>
+        </div>
+        <div class="card p-3">
+            <h4>Instructor: @Model.Instructor</h4>
+        </div>
+        <div class="card p-3">
+            <h4>Credits: @Model.Credits</h4>
+        </div>
+        <div class="card p-3">
+            <h4>Online Options: @Model.Online</h4>
+        </div>
+    </div>
+</form>
+

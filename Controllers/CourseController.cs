@@ -20,7 +20,7 @@ public class CourseController : Controller
 
     public IActionResult Show()
     {
-        var items = _service.Course.OrderBy(m => m.Id).ToList();
+        List<Course> items = _service.Course.OrderBy(m => m.Id).ToList();
         return View(items);
     }
 
@@ -46,25 +46,64 @@ public class CourseController : Controller
     [HttpGet]
     public IActionResult Edit(int id)
     {
-        Course c = _service.Course.FirstOrDefault(c => c.Id == id);
-        return View(c);
+        Course? foundCourse = _service.Course.FirstOrDefault(c => c.Id == id);
+        if (foundCourse == null)
+        {
+            return NotFound();
+        }
+        return View(foundCourse);
     }
 
     [HttpPost, ActionName("Edit")]
-    public IActionResult EditPost()
+    public IActionResult EditPost(Course updatedCourse)
     {
-        return View();
+        // Make sure the model is valid
+        if (!ModelState.IsValid)
+        {
+            return View(updatedCourse);
+        }
+        Course? foundCourse = _service.Course.Find(updatedCourse.Id);
+        // Make sure we found one
+        if (foundCourse == null)
+        {
+            return NotFound();
+        }
+        // Update
+        foundCourse.Instructor = updatedCourse.Instructor;
+        foundCourse.Title = updatedCourse.Title;
+        foundCourse.Credits = updatedCourse.Credits;
+        foundCourse.Online = updatedCourse.Online;
+        // Save
+        _service.SaveChanges();
+        return RedirectToAction(nameof(Index));
     }
 
     [HttpGet]
-    public IActionResult Delete()
+    public IActionResult Delete(int id)
     {
-        return View();
+        Course? foundCourse = _service.Course.FirstOrDefault(c => c.Id == id);
+        if (foundCourse == null)
+        {
+            return NotFound();
+        }
+        return View(foundCourse);
     }
 
     [HttpPost, ActionName("Delete")]
-    public IActionResult DeletePost()
+    public IActionResult DeletePost(int id)
     {
-        return View();
+        if (!ModelState.IsValid)
+        {
+            return View(id);
+        }
+        Course? foundCourse = _service.Course.Find(id);
+        if (foundCourse == null)
+        {
+            return NotFound();
+        }
+        _service.Course.Remove(foundCourse);
+        _service.SaveChanges();
+
+        return RedirectToAction(nameof(Index));
     }
 }

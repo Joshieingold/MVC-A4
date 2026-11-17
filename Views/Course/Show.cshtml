@@ -21,9 +21,8 @@
             <td class="text-center">@item.Online</td>
             <td class="d-flex gap-1">
                 <form>
-                    <input type="hidden" value="@item.Id" name="id" />
-                    <i asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary bi bi-pencil"></i>
-                    <i asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger bi bi-trash"></i>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary bi bi-pencil"></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger bi bi-trash"></a>
                 </form>
             </td>
         </tr>
